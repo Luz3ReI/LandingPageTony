@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="ChuleandoLaPagina.css">
     <title>Bienvenida</title>
 </head>
+
 <body>
-   
+
     <main>
         <article class="Entrada">
             <div class="Clase1">
@@ -24,41 +26,49 @@
                 <h2>Dime algo de ti, tu sabes, para mejorar la experiencia.</h2>
             </div>
         </article>
-    
-    <fieldset>
-        <article class="Datos">
-        <div class="form">
-            <form action="Ordenes.js" name="nombre">
-            <input type="text" id="user" placeholder="Tu nombre" required value="Tu nombre">
-            </form>
-        </div>
 
-        <div class="form">
-            <form action="Ordenes.js" name="página" value="userType">
-      <select name="Tipo de Usuario" id="userType" placeholder="Tu tipo">
-        <option value="Selecciona">¿Qué tipo de usuario eres?</option>
-        <option value="Desarrollador">Desarrollador</option>
-        <option value="Pug">Pug</option>
-        <option value="Chewbaca">Chewbaca</option>
-        <option value="RataWomp">Rata Womp</option>
-      </select>
-            </form>
-        </div>
-
-        <div class="form" name="Enter">
-            <form action="Ordenes.js" method="get">
-            <button type="submit">Ingresar</button>
-            </form>
-        </div>
-    </fieldset>
+        <fieldset>
+            <article class="Datos">
+                <div class="form">
+                    <!-- NYXOT 19/04/2023
+                el form debe ser una sola etiqueta con todos los campos que quieres mandar, si agregas otra etiqueta form
+                se considera otro formulario -->
+                <!-- NYXOT 19/04/2023
+                el atributo action del form, no puede ser un archivo js, debe ser otro html, php, asp o cualquier otro lenguaje que
+                contenga una vista html por que la redirección de hara hacia ese archivo-->
+                <!-- NYXOT 19/04/2023
+                Agregamos un id al formulario para poder manipularlo con js-->
+                    <form id="formularioRediccionDinamica" action="" >
+                        <!-- NYXOT 19/04/2023
+                        en el input nombre no llenamos el value, el placeholder ya da el indicio que poner-->
+                        <input type="text" name="nombre" placeholder="Tu nombre" required value="">
+                        <!-- NYXOT 19/04/2023
+                        en el select el atributo name me parece no puede contener espacios-->
+                        <select name="userType" placeholder="Tu tipo">
+                            <option defualt value="">¿Qué tipo de usuario eres?</option>
+                            <option value="Desarrollador">Desarrollador</option>
+                            <option value="Pug">Pug</option>
+                            <option value="Chewbaca">Chewbaca</option>
+                            <option value="RataWomp">Rata Womp</option>
+                        </select>
+                        <!-- NYXOT 19/04/2023
+                        cambiamos el tipo del boton para poder agregar evento onclic sin que dispare el formulario -->
+                        <button type="button" onclick="redireccion()">Ingresar</button>
+                    </form>
+                </div>
+        </fieldset>
 
     </main>
 
-<footer>
-    <p>Gracias por pasarte por aca</p><p>Ember3ReI</p>
-</footer>
+    <footer>
+        <p>Gracias por pasarte por aca</p>
+        <p>Ember3ReI</p>
+    </footer>
 
-</article>
-    
+    </article>
+
 </body>
+ <!-- NYXOT 19/04/2023
+agregamos el script de "Ordenes" -->
+<script src="Ordenes.js"></script> 
 </html>
