@@ -1,0 +1,64 @@
+html {
+    font-family: 'Shantell sans', sans-serif;
+}
+
+header {
+    background-color: #131212;
+    padding: 3rem 2rem;
+ }
+
+header h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(243, 241, 239);
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(228, 223, 217);
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    color: rgb(230, 228, 225);
+}
+
+
+video {
+    align-content: center;
+}
+
+
+
+
+footer {
+    background-color: #292828;
+    padding: 3rem;
+    color: rgb(224, 224, 220);
+}
+
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: antiquewhite;
+    text-decoration: none;
+    text-align: right;
+}
+
+footer a:hover {
+    color: rgb(189, 194, 204);
+}

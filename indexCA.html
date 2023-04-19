@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="ChuleandoLaPagina.css">
+
+    
+</head>
+<body>
+
+    <main><article class="Entrada">
+        <div class="Clase1">
+            <h1>Hola ser viviente!</h1>
+        </div>
+
+        <div class="Clase2">
+            <h2>Dime algo de ti, tu sabes, para mejorar la experiencia.</h2>
+        </div>
+    </article></main>
+
+    <form method="post" onload="redireccion();">
+        <fieldset>
+            <form id="form">
+            <label for="nombre">
+                Escribe tu nombre
+                <input id="nombre" type="text" placeholder="Escribe tu nombre aqui"/>
+            </label>
+                ¿Qué tipo de usuario eres?
+                <select name="Tipo de Usuario" id="userType" placeholder="Tu tipo">
+                    <option value="Selecciona">Escoge tu tipo</option>
+                    <option value="Desarrollador">Desarrollador</option>
+                    <option value="Pug">Pug</option>
+                    <option value="Chewbaca">Chewbaca</option>
+                    <option value="RataWomp">Rata Womp</option>
+                  </select>
+            <button type="submit" id="boton">Ingresar</button>
+            </form>
+        </fieldset>
+
+        <script src="Ordenes.js">
+            var form = document.getElementById('form')
+            
+            form.addEventListener('submit', function(redireccion){
+                redireccion.preventDefault() //prevents the form from autosubmiting
+
+                var username = document.getElementById('nombre').value
+
+                var tipo = document.getElementById('userType')
+            })
+        </script>
+
+    </form>
+</body>
+</html>

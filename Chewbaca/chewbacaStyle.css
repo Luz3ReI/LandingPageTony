@@ -1,0 +1,77 @@
+html {
+    font-family: 'Shantell sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #c4b29c;
+}
+
+header {
+    background-image: url(chewbacaFondo.jpg);
+    padding: 3rem 2rem;
+ }
+
+header h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(204, 144, 67);
+    text-shadow: #050505 5px 0 10px;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+section article {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+
+section article:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+}
+
+section article h2, section article p {
+    margin: 1rem;
+}
+
+footer {
+    background-color: #4a343b;
+    padding: 3rem;
+    color: beige;
+}
+
+
+footer section {
+    float: right;
+}
+
+footer p {
+    text-align: justify;
+    display: inline-block;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: cornflowerblue;
+}
+
+
+
+/* Visual Code Studio --------------*/
+
+label {
+    display: block;
+    margin: auto;
+}
